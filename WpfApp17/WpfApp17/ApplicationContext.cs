@@ -3,8 +3,7 @@
 public class ApplicationContext : DbContext
 {
     public DbSet<Shop> Book     { get; set; } = null!;
-    public DbSet<User> Users    { get; set; } = null!;
-
+    public DbSet<Use> Users  { get; set; } = null!;
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

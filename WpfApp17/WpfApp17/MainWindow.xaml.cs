@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace WpfApp17
             InitializeComponent();
             using (ApplicationContext db = new ApplicationContext())
             {
+              
                 var users = db.Book.ToList();
                 foreach (Shop u in users)
                 {

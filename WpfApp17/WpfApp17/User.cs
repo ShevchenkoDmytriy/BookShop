@@ -10,5 +10,10 @@ public class Shop
     public string? Author { get; set;}
     public int Year { get; set; }
 }
-
+public class Use
+{
+    public int Id { get; set; }
+    public string? Login { get; set; }
+    public string? Password { get; set; }
+}
 

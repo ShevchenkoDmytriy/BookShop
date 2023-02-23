@@ -20,21 +20,19 @@ namespace WpfApp17
         public Window1()
         {
             InitializeComponent();
-            string log = Convert.ToString(Log1);
-            string pas = Convert.ToString(Pas1);
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             using (ApplicationContext db = new ApplicationContext())
             {
-                User peop=new User();
-                var users = db.Users.ToList();
-                foreach (User u in users)
-                {
-
-
-                }
+                string log = Convert.ToString(Log1);
+                string pas = Convert.ToString(Pas1);
+                Use peop = new Use { Login = log, Password =pas };
+                db.Users.Add(peop); 
+                db.SaveChanges();
+                this.Close();
 
             }
         }
@@ -43,15 +41,19 @@ namespace WpfApp17
         {
             using (ApplicationContext db = new ApplicationContext())
             {
+                string log = Convert.ToString(Log1);
+                string pas = Convert.ToString(Pas1);
                 var users = db.Users.ToList();
-                foreach (User u in users)
+                foreach (Use u in users)
                 {
-                    if()
-
+                    if (u.Login == log & u.Password == pas)
+                    {
+                        this.Close();
+                    }
                 }
 
             }
-            Close();
+
         }
     }
 }
