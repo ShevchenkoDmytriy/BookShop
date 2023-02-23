@@ -3230,11 +3230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dmitriy\\source\\repos\\WpfApp4\\WpfApp4\\WpfApp4.csproj",
+      "projectUniqueName": "C:\\Users\\Dmitriy\\Downloads\\BookShop-main\\BookShop-main\\WpfApp4\\WpfApp4\\WpfApp4.csproj",
       "projectName": "WpfApp4",
-      "projectPath": "C:\\Users\\Dmitriy\\source\\repos\\WpfApp4\\WpfApp4\\WpfApp4.csproj",
+      "projectPath": "C:\\Users\\Dmitriy\\Downloads\\BookShop-main\\BookShop-main\\WpfApp4\\WpfApp4\\WpfApp4.csproj",
       "packagesPath": "C:\\Users\\Dmitriy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dmitriy\\source\\repos\\WpfApp4\\WpfApp4\\obj\\",
+      "outputPath": "C:\\Users\\Dmitriy\\Downloads\\BookShop-main\\BookShop-main\\WpfApp4\\WpfApp4\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

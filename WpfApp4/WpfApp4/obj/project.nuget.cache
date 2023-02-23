@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uTDl9IAl3dTrPLZ6k5ygutIyeHhspxtYM1rSUYqn0XFB+pxQSx5ynBTJBfC5I89skjv4pkcq7kMVPVJacbbLyQ==",
+  "dgSpecHash": "zJu0A1miLxBu+Ut/4GbZi+8+hQlWwNBoK+PF9oLJMaxLJ5goQVA69wUq0g0jQQqYz1WstU896IxEFyHpHCBrsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dmitriy\\source\\repos\\WpfApp4\\WpfApp4\\WpfApp4.csproj",
+  "projectFilePath": "C:\\Users\\Dmitriy\\Downloads\\BookShop-main\\BookShop-main\\WpfApp4\\WpfApp4\\WpfApp4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dmitriy\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Dmitriy\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

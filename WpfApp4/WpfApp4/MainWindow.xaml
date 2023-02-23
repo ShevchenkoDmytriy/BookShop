@@ -18,9 +18,9 @@
                     <Label Content="ДО -50%" Foreground="#FFB5195A" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Arial Black" Margin="-2,0,0,0"/>
                 </StackPanel>
                 <StackPanel Background="#221f1f" Height="80" Orientation="Horizontal" VerticalAlignment="Top">
-                    <Button Content="📖"  Height="50" Width="50" Margin="100,0,0,0" FontSize="34" BorderBrush="Transparent" Foreground="White" Background="Transparent">
+                    <Button x:Name="Main1" Content="📖"  Height="50" Width="50" Margin="100,0,0,0" FontSize="34" BorderBrush="Transparent" Foreground="White" Background="Transparent" Click="Main1_Click">
                     </Button>
-                    <Button Content="BookShop" Width="120" Height="40" Margin="20,0,0,0" Foreground="White" FontFamily="Arial Black" FontSize="20" Background="Transparent" BorderBrush="Transparent"/>
+                    <Button x:Name="Main2" Content="BookShop" Width="120" Height="40" Margin="20,0,0,0" Foreground="White" FontFamily="Arial Black" FontSize="20" Background="Transparent" BorderBrush="Transparent" Click="Main2_Click"/>
                     <TextBox x:Name="TextBox" Text="Я шукаю..." Background="White" Width="450" Height="40" Margin="60,0,0,0" FontSize="22" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="0,4,0,0" PreviewMouseLeftButtonDown="TextBox_PreviewMouseLeftButtonDown"/>
                     <Button x:Name="Find" Content="Знайти" Height="40" Width="90" BorderBrush="#1B378D" Background="#1B378D" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Click="Find_Click"/>
                     <Button Content="🛒" Height="50" Width="50" Margin="40,0,0,0"  BorderBrush="{x:Null}" FontSize="35" Background="Transparent" Foreground="White"/>
@@ -32,16 +32,16 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <StackPanel Height="400" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" >
-                        <Label Height="400" BorderBrush="#FFA2A2A2" BorderThickness="1" />
-                        <Label Content="Класика" Margin="0,-750,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D"/>
-                        <Label Content="Детективи" Margin="0,-680,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D"/>
-                        <Label Content="Романи" Margin="0,-610,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D"/>
-                        <Label Content="Фантастика" Margin="0,-540,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D"/>
-                        <Label Content="Трилери,жахи" Margin="0,-470,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D"/>
-                        <Label Content="Енциклопедії" Margin="0,-400,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D"/>
+                        <Label  Height="400" BorderBrush="#FFA2A2A2" BorderThickness="1"  />
+                        <Label x:Name="Book1" Content="Класика" Margin="0,-750,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D" PreviewMouseLeftButtonDown="Book2_PreviewMouseLeftButtonDown"/>
+                        <Label x:Name="Book2" Content="Детективи" Margin="0,-680,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D" PreviewMouseLeftButtonDown="Book3_PreviewMouseLeftButtonDown"/>
+                        <Label x:Name="Book3" Content="Романи" Margin="0,-610,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D" PreviewMouseLeftButtonDown="Book3_PreviewMouseLeftButtonDown_1"/>
+                        <Label x:Name="Book4" Content="Фантастика" Margin="0,-540,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D" PreviewMouseLeftButtonDown="Book4_PreviewMouseLeftButtonDown"/>
+                        <Label x:Name="Book5" Content="Трилери,жахи" Margin="0,-470,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D" PreviewMouseLeftButtonDown="Book5_PreviewMouseLeftButtonDown"/>
+                        <Label x:Name="Book6" Content="Енциклопедії" Margin="0,-400,40,0" Height="35" FontSize="20" Width="200" Foreground="#1B378D" PreviewMouseLeftButtonDown="Book6_PreviewMouseLeftButtonDown"/>
 
                     </StackPanel>
-                    <StackPanel x:Name="Stack1" Width="765" Height="950">
+                    <StackPanel Visibility="Visible" x:Name="Stack1" Width="765" Height="950">
                         <StackPanel Height="150"  Margin="0,1,0,0">
                             <Label x:Name="Name1" Height="150" BorderBrush="#FFA2A2A2" BorderThickness="1" FontFamily="Franklin Gothic Medium" FontSize="22">
                             </Label>
@@ -77,6 +77,15 @@
                             </Label>
                             <Button x:Name="But6" Content="Купити" Height="45" Width="120" Margin="0,-100,40,10" BorderBrush="Transparent" Foreground="White" Background="#1B378D" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="But6_Click"  />
                             <Label x:Name="Price6" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-130,42,0" Height="40" Width="120" FontFamily="Arial Black" FontSize="20"/>
+                        </StackPanel>
+             
+                        </StackPanel>
+                    <StackPanel Visibility="Visible" x:Name="Stack2" Width="765"  Margin="-765,0,0,0">
+                        <StackPanel Height="150"  Margin="0,1,0,0">
+                            <Label x:Name="Name7" Height="150" BorderBrush="#FFA2A2A2" BorderThickness="1" FontFamily="Franklin Gothic Medium" FontSize="22" >
+                            </Label>
+                            <Button x:Name="But7" Content="Купити" Height="45" Width="120" Margin="0,-100,40,10" BorderBrush="Transparent" Foreground="White" Background="#1B378D" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="But6_Click"  />
+                            <Label x:Name="Price7" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-130,42,0" Height="40" Width="120" FontFamily="Arial Black" FontSize="20"/>
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>

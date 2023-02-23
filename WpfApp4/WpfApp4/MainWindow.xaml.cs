@@ -71,7 +71,22 @@ namespace WpfApp4
 
         private void Find_Click(object sender, RoutedEventArgs e)
         {
+            Stack1.Visibility = Visibility.Hidden;
+            Stack2.Visibility=Visibility.Visible;
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                string Point = Convert.ToString(TextBox.Text);
+                var users = db.Book.ToList();
+                foreach (Shop u in users)
+                {
+                    if (u.Name == Point)
+                    {
+                        Name7.Content = $"\n{u.Name}\tРік: {u.Year}\nЖанр: {u.About}\tАвтор: {u.Author}";
+                        Price7.Content = $"{u.Price} uah";
+                    }
 
+                }
+            }
         }
 
         private void But1_Click(object sender, RoutedEventArgs e)
@@ -137,6 +152,134 @@ namespace WpfApp4
         private void TextBox_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             TextBox.Clear();
+        }
+
+        private void Main1_Click(object sender, RoutedEventArgs e)
+        {
+            Stack1.Visibility = Visibility.Visible;
+            Stack2.Visibility = Visibility.Hidden;
+        }
+
+        private void Main2_Click(object sender, RoutedEventArgs e)
+        {
+            Stack1.Visibility = Visibility.Visible;
+            Stack2.Visibility = Visibility.Hidden;
+        }
+
+
+
+        private void Book2_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Stack1.Visibility = Visibility.Hidden;
+            Stack2.Visibility = Visibility.Visible;
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                var users = db.Book.ToList();
+                foreach (Shop u in users)
+                {
+                    if (u.About == "Классика")
+                    {
+                        Name7.Content = $"\n{u.Name}\tРік: {u.Year}\nЖанр: {u.About}\tАвтор: {u.Author}";
+                        Price7.Content = $"{u.Price} uah";
+                    }
+
+                }
+            }
+        }
+
+        private void Book3_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Stack1.Visibility = Visibility.Hidden;
+            Stack2.Visibility = Visibility.Visible;
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                var users = db.Book.ToList();
+                foreach (Shop u in users)
+                {
+                    if (u.About == "Детектив")
+                    {
+                        Name7.Content = $"\n{u.Name}\tРік: {u.Year}\nЖанр: {u.About}\tАвтор: {u.Author}";
+                        Price7.Content = $"{u.Price} uah";
+                    }
+
+                }
+            }
+        }
+
+        private void Book3_PreviewMouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+            Stack1.Visibility = Visibility.Hidden;
+            Stack2.Visibility = Visibility.Visible;
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                var users = db.Book.ToList();
+                foreach (Shop u in users)
+                {
+                    if (u.About == "Роман")
+                    {
+                        Name7.Content = $"\n{u.Name}\tРік: {u.Year}\nЖанр: {u.About}\tАвтор: {u.Author}";
+                        Price7.Content = $"{u.Price} uah";
+                    }
+
+                }
+            }
+        }
+
+        private void Book4_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Stack1.Visibility = Visibility.Hidden;
+            Stack2.Visibility = Visibility.Visible;
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                var users = db.Book.ToList();
+                foreach (Shop u in users)
+                {
+                    if (u.About == "Фантастика")
+                    {
+                        Name7.Content = $"\n{u.Name}\tРік: {u.Year}\nЖанр: {u.About}\tАвтор: {u.Author}";
+                        Price7.Content = $"{u.Price} uah";
+                    }
+
+                }
+            }
+        }
+
+        private void Book5_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Stack1.Visibility = Visibility.Hidden;
+            Stack2.Visibility = Visibility.Visible;
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                var users = db.Book.ToList();
+                foreach (Shop u in users)
+                {
+                    if (u.About == "Жахи" || u.About == "Трилер")
+                    {
+                        Name7.Content = $"\n{u.Name}\tРік: {u.Year}\nЖанр: {u.About}\tАвтор: {u.Author}";
+                        Price7.Content = $"{u.Price} uah";
+                    }
+
+                }
+            }
+        }
+
+        private void Book6_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Stack1.Visibility = Visibility.Hidden;
+            Stack2.Visibility = Visibility.Visible;
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                var users = db.Book.ToList();
+                foreach (Shop u in users)
+                {
+                    if (u.About == "Енциклопедія")
+                    {
+                        Name7.Content = $"\n{u.Name}\tРік: {u.Year}\nЖанр: {u.About}\tАвтор: {u.Author}";
+                        Price7.Content = $"{u.Price} uah";
+                    }
+
+                }
+            }
         }
     }
 }
